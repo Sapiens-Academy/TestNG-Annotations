@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="12" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Pruebas del Carrito" duration-ms="142" started-at="2021-08-24T01:54:50Z" finished-at="2021-08-24T01:54:50Z">
+    <groups>
+    </groups>
+    <test name="Inventario y Carro de Compras" duration-ms="58" started-at="2021-08-24T01:54:50Z" finished-at="2021-08-24T01:54:50Z">
+      <class name="com.sapiensacademytest.suite.Item">
+        <test-method status="PASS" signature="addItem()[pri:0, instance:com.sapiensacademytest.suite.Item@5f375618]" name="addItem" duration-ms="7" started-at="2021-08-23T20:54:50Z" finished-at="2021-08-23T20:54:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItem -->
+        <test-method status="PASS" signature="clickOnItem()[pri:0, instance:com.sapiensacademytest.suite.Item@5f375618]" name="clickOnItem" duration-ms="3" started-at="2021-08-23T20:54:50Z" finished-at="2021-08-23T20:54:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnItem -->
+        <test-method status="PASS" signature="modifyItem()[pri:0, instance:com.sapiensacademytest.suite.Item@5f375618]" name="modifyItem" duration-ms="2" started-at="2021-08-23T20:54:50Z" finished-at="2021-08-23T20:54:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifyItem -->
+        <test-method status="PASS" signature="removeItem()[pri:0, instance:com.sapiensacademytest.suite.Item@5f375618]" name="removeItem" duration-ms="1" started-at="2021-08-23T20:54:50Z" finished-at="2021-08-23T20:54:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeItem -->
+      </class> <!-- com.sapiensacademytest.suite.Item -->
+      <class name="com.sapiensacademytest.suite.Cart">
+        <test-method status="PASS" signature="addItemOnCart()[pri:0, instance:com.sapiensacademytest.suite.Cart@215be6bb]" name="addItemOnCart" duration-ms="2" started-at="2021-08-23T20:54:50Z" finished-at="2021-08-23T20:54:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemOnCart -->
+        <test-method status="PASS" signature="modifyItemOnCart()[pri:0, instance:com.sapiensacademytest.suite.Cart@215be6bb]" name="modifyItemOnCart" duration-ms="1" started-at="2021-08-23T20:54:50Z" finished-at="2021-08-23T20:54:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifyItemOnCart -->
+      </class> <!-- com.sapiensacademytest.suite.Cart -->
+    </test> <!-- Inventario y Carro de Compras -->
+    <test name="Usuarios y Departamentos" duration-ms="38" started-at="2021-08-24T01:54:50Z" finished-at="2021-08-24T01:54:50Z">
+      <class name="com.sapiensacademytest.suite.Department">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.sapiensacademytest.suite.Department@457e2f02]" name="beforeTest" is-config="true" duration-ms="1" started-at="2021-08-23T20:54:50Z" finished-at="2021-08-23T20:54:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="clickOnDepartment()[pri:0, instance:com.sapiensacademytest.suite.Department@457e2f02]" name="clickOnDepartment" duration-ms="2" started-at="2021-08-23T20:54:50Z" finished-at="2021-08-23T20:54:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnDepartment -->
+        <test-method status="PASS" signature="modifyDepartment()[pri:0, instance:com.sapiensacademytest.suite.Department@457e2f02]" name="modifyDepartment" duration-ms="2" started-at="2021-08-23T20:54:50Z" depends-on-methods="com.sapiensacademytest.suite.Department.clickOnDepartment" finished-at="2021-08-23T20:54:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifyDepartment -->
+        <test-method status="PASS" signature="removeDepartment()[pri:0, instance:com.sapiensacademytest.suite.Department@457e2f02]" name="removeDepartment" duration-ms="1" started-at="2021-08-23T20:54:50Z" depends-on-methods="com.sapiensacademytest.suite.Department.modifyDepartment" finished-at="2021-08-23T20:54:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeDepartment -->
+        <test-method status="PASS" signature="addDepartment()[pri:0, instance:com.sapiensacademytest.suite.Department@457e2f02]" name="addDepartment" duration-ms="1" started-at="2021-08-23T20:54:50Z" depends-on-methods="com.sapiensacademytest.suite.Department.removeDepartment" finished-at="2021-08-23T20:54:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDepartment -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.sapiensacademytest.suite.Department@457e2f02]" name="afterTest" is-config="true" duration-ms="1" started-at="2021-08-23T20:54:50Z" finished-at="2021-08-23T20:54:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.sapiensacademytest.suite.Department -->
+      <class name="com.sapiensacademytest.suite.User">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.sapiensacademytest.suite.User@4cc0edeb]" name="beforeSuite" is-config="true" duration-ms="13" started-at="2021-08-23T20:54:50Z" finished-at="2021-08-23T20:54:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="clickToAddUser()[pri:0, instance:com.sapiensacademytest.suite.User@4cc0edeb]" name="clickToAddUser" duration-ms="1" started-at="2021-08-23T20:54:50Z" finished-at="2021-08-23T20:54:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickToAddUser -->
+        <test-method status="PASS" signature="clickToRemoveUser()[pri:0, instance:com.sapiensacademytest.suite.User@4cc0edeb]" name="clickToRemoveUser" duration-ms="3" started-at="2021-08-23T20:54:50Z" finished-at="2021-08-23T20:54:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickToRemoveUser -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.sapiensacademytest.suite.User@4cc0edeb]" name="afterSuite" is-config="true" duration-ms="1" started-at="2021-08-23T20:54:50Z" finished-at="2021-08-23T20:54:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.sapiensacademytest.suite.User -->
+    </test> <!-- Usuarios y Departamentos -->
+  </suite> <!-- Pruebas del Carrito -->
+</testng-results>

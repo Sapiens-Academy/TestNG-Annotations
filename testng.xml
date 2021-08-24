@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Pruebas del Carrito">
+  <test name="Inventario y Carro de Compras">
+    <classes>
+      <class name="com.sapiensacademytest.suite.Item"/>
+      <class name="com.sapiensacademytest.suite.Cart">
+      <methods>
+      <exclude name="clickOnItemOnCart" />
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Usuarios y Departamentos">
+    <classes>
+      <class name="com.sapiensacademytest.suite.Department"/>
+      <class name="com.sapiensacademytest.suite.User">
+      <methods>
+      <include name="clickTo.*" />
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
