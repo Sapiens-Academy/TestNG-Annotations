@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Pruebas del Carrito]">
+  <parameter name="userName" value="Alejandro"/>
+  <parameter name="URL" value="https://sapiensacademy.moodlecloud.com/"/>
+  <listeners>
+    <listener class-name="com.sapiensacademytest.suite.Listener"/>
+  </listeners>
+  <test name="Inventarios, departamentos, productos y Usuarios(failed)">
+    <classes>
+      <class name="com.sapiensacademytest.suite.Department">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.sapiensacademytest.suite.Department -->
+      <class name="com.sapiensacademytest.suite.Item">
+        <methods>
+          <include name="modifyItem"/>
+        </methods>
+      </class> <!-- com.sapiensacademytest.suite.Item -->
+      <class name="com.sapiensacademytest.suite.User">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.sapiensacademytest.suite.User -->
+    </classes>
+  </test> <!-- Inventarios, departamentos, productos y Usuarios(failed) -->
+</suite> <!-- Failed suite [Pruebas del Carrito] -->

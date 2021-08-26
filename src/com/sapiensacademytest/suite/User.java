@@ -2,22 +2,25 @@ package com.sapiensacademytest.suite;
 
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class User {
-	@Test
+	@Test(groups= {"add", "functional", "smoke"})
 	public void clickToAddUser() {
 		System.out.println("Este metodo tiene el código de añadir un usuario");
 	}
 	
-	@Test
+	@Test(groups= {"smoke"})
 	public void clickToRemoveUser() {
 		System.out.println("Este metodo tiene el código de remover un Usuario");
 	}
 	
-	@Test
-	public void clickOnUser() {
-		System.out.println("Este metodo tiene el código para hacer clic sobre un Usuario");
+	@Parameters({"URL", "userName"})
+	@Test(groups= {"smoke"})
+	public void clickOnUser(String urlName, String username) {
+		System.out.println("Este metodo tiene el código para hacer clic sobre el Usuario " + username +
+				" en la página: " + urlName);
 	}
 
 	@Test

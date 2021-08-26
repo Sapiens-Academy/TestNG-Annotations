@@ -6,12 +6,12 @@ import org.testng.annotations.Test;
 
 public class Cart {
 	
-	@Test
+	@Test(groups= {"add"})
 	public void addItemOnCart() {
 		System.out.println("Este metodo tiene el código de añadir un articulo al carrito");
 	}
 	
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void removeItemOnCart() {
 		System.out.println("Este metodo tiene el código de remover un articulo del carrito");
 	}

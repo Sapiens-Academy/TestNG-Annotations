@@ -17,7 +17,7 @@ public class Department {
 		System.out.println("3- Este metodo tiene el código de remover un articulo del departamento");
 	}
 	
-	@Test
+	@Test(groups= {"add"})
 	public void clickOnDepartment() {
 		System.out.println("1- Este metodo tiene el código para hacer clic sobre un articulo del departamento");
 	}

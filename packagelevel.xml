@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Pruebas del Carrito">
+<parameter name="URL" value="https://sapiensacademy.moodlecloud.com/"/>
+<parameter name="userName" value="Alejandro"/>
+  <test name="Inventarios, departamentos, productos y Usuarios">
+  <packages>
+  <package name="com.sapiensacademytest.suite"/>
+  </packages>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
